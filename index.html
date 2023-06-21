@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./assets/img/n.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <title>Drilling M2 Sesión 2 - Modificando NIMRODEL Restaurant y Pub</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./img/n.png" alt="nimrodel" width="400" height="400">
+
+        <ul>
+            <li>Nuestros Productos</li>
+            <li>sobre nosotros</li>
+            <li><a class="nav-link" href="#comuniquemonos">Comuniquemonos</a></li>
+            <li><a class="nav-link" href="#reserva">Reserva</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <h3 class="text-center mt-3 text-muted">Nimrodel Pub Restaurant</h3>
+        <h3 class="text-center text-decoration-overline">Destacados de la semana</h3>
+    </header>
+
+    <section>
+        <div>
+            <img src="./img/bebidas.jpg" class="imagen" width="500" alt="...">
+            <h5>GASEOSAS</h5>
+            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+
+        <div>
+            <img src="./img/tablas.jpg" class="imagen" width="500" alt="...">
+            <h5>TABLAS</h5>
+            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+
+        <div>
+            <img src="./img/shop.jpeg" class="imagen" width="500" alt="...">
+            <h5>SHOP CERVEZA</h5>
+            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </section><br>
+
+    <section>
+        <div>
+            <h3>Comuniquemonos</h3>
+            <form action="" id="comuniquemonos">
+            <table>
+                <tr>
+                    <td width="100%">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="name" required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="correo">Correo</label>
+                        <input type="text" name="correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Teléfono</label>
+                        <input type="text" id="phone" required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lista">Motivo</label><br>
+                        <input type="text" name="lista" list="motivo" required><br><br>
+                    </td>
+                </tr>
+
+                <datalist id="motivo">
+                    <option>felicitaciones</option>
+                    <option>reclamos</option>
+                    <option>consultas</option>
+                    <option>sugerencias</option>
+                </datalist>
+
+                <tr>
+                    <td>
+                        <label for="mensaje"></label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <p>
+                    <button class="submit">Enviar</button>
+                </p>
+            </div>
+            </form>
+</section>
+
+<section>
+    <div><br>
+        <h3>Reserva</h3>
+        <form action="" id="reserva">
+        <table>
+            <tr>
+                <td width="100%">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Correo</label>
+                    <input type="email" name="email" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Teléfono</label>
+                    <input type="text" name="telefono" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Fecha</label>
+                    <input type="date" name="fecha" required><br><br>
+                </td>
+            </tr>
+                <td>
+                    <label for="">Hora</label>
+                    <input type="time" name="hora" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Cantidad de Asistentes</label>
+                    <input type="text" name="asistentes" required><br>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <p>
+                <button class="submit">Reservar</button>
+            </p>
+        </div>
+    </form>
+    </section>
+
+    <footer>
+        <div>
+            <p>Todos los derechos reservados ®</p>
+        </div>
+    </footer>
+
+</body>
+</html>
